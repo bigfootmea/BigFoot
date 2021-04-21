@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:BigFoot/widget/asset_player_widget.dart';
 import 'package:video_player/video_player.dart';
-import 'basic/asset_player_widget.dart';
+//import 'basic/asset_player_widget.dart';
 import '../widget/basic_overlay_widget.dart';
 
 class VideoPlayerWidget extends StatelessWidget {
