@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
+import 'about.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -19,7 +20,6 @@ class _ProfilePageState extends State<ProfilePage> {
     'images/7.jpg',
     'images/8.jpg',
     'images/9.jpg',
-    
   ];
 
   @override
@@ -86,7 +86,6 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
- 
   SingleChildScrollView _panelBody(ScrollController controller) {
     double hPadding = 40;
 
@@ -164,11 +163,25 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ),
         
+          OutlineButton(
+            onPressed:  () => Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => About())),
+            borderSide: BorderSide(color: Colors.blue),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(35)),
+            child: Text(
+              'Team',
+              style: TextStyle(
+                fontFamily: 'NimbusSanL',
+                fontSize: 12,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        
       ],
     );
   }
-
-  
 
   /// Title Section
   Column _titleSection() {
