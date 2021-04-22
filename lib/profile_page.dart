@@ -140,6 +140,7 @@ class _ProfilePageState extends State<ProfilePage> {
         Visibility(
           visible: !_isOpen,
           child: Expanded(
+            // ignore: deprecated_member_use
             child: OutlineButton(
               onPressed: () => _panelController.open(),
               borderSide: BorderSide(color: Colors.blue),
@@ -163,6 +164,7 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ),
         
+          // ignore: deprecated_member_use
           OutlineButton(
             onPressed:  () => Navigator.push(context,
                           MaterialPageRoute(builder: (context) => About())),
